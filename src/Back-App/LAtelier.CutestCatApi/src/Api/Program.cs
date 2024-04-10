@@ -25,11 +25,8 @@ builder.Services.AddScoped<IVotesRepository, VotesRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseSwagger();
+app.UseSwaggerUI();
 
 //Global server error handle middleware
 app.UseServerErrorHandler();
