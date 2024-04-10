@@ -39,7 +39,7 @@ namespace LAtelier.CutestCatApi.Infrastructure.Repositories
             var ckeck = GetVote(email, catCode);
             if (ckeck != null)
             {
-                throw new Exception("DUPLICATED - Erreur booking already exist");
+                throw new Exception("DUPLICATED - Erreur vote already exist");
             }
 
             await _context.Votes.AddAsync(new VoteModel
