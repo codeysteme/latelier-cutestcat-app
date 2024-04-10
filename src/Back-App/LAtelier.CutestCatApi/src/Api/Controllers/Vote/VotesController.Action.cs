@@ -11,7 +11,7 @@ namespace LAtelier.CutestCatApi.Api.Controllers.Vote
         /// <summary>
         /// Create a vote for a cat 
         /// </summary>
-        /// <param name="saveBookingRequest">request for vote</param>
+        /// <param name="createVoteRequest">request for vote</param>
         /// <returns></returns>
         /// <remarks>
         /// example request:
