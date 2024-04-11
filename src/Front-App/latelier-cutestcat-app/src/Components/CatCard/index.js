@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const CatCard = (item, cutestCode) => {
   const colorBack = item.code === cutestCode ? "gray" : "#fff";
   return (
-    <Link key={item.id} className="cardLink" to={`votes?code=${item.code}`}>
+    <Link key={item.id} className="cardLink" to={`/votes?code=${item.code}`}>
       <Card
         key={item.id}
         className="catBox"
