@@ -1,12 +1,11 @@
 import axios from "axios"
 
-const URL = "http://localhost:5141/api";
+const URL = "http://localhost:5141/api/";
 
 /**
  * The LAtelier.CutestCatApi Provider
  * @returns {httpClient}
  * @example
- * const {saveBooking} = useBookingApi()
  */
 export default function useCutestCatApi() {
     const cutestCatApi = axios.create({
@@ -29,6 +28,7 @@ export default function useCutestCatApi() {
             const { data } = await cutestCatApi.get("cats");
             return data;
           } catch (error) {
+            console.log(error);
             return [];
           }
         },
