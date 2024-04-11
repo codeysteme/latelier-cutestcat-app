@@ -17,8 +17,10 @@ function Home() {
   const cutestCatDisplay = () => {
     var catList = getCatsQuery.data;
 
-    return (
-      !isEmpty(catList) && catList.map((item) => CatCard(item, catList[0].code))
+    return !isEmpty(catList) ? (
+      catList.map((item) => CatCard(item, catList[0].code))
+    ) : (
+      <h3 style={{ textAlign: "center" }}>Aucun chats disponible ...</h3>
     );
   };
 

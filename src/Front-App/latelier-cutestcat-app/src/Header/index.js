@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -18,9 +19,18 @@ function Header() {
           >
             CAT MASH
           </IconButton>
-          <Typography variant="h6" color="inherit" component="div">
-            Acceuil
-          </Typography>
+          <nav className="headerNav">
+            <a href="/">
+              <Typography variant="h6" color="inherit" component="div">
+                Acceuil
+              </Typography>
+            </a>
+            <a href="votes">
+              <Typography variant="h6" color="inherit" component="div">
+                Votes
+              </Typography>
+            </a>
+          </nav>
         </Toolbar>
       </AppBar>
     </Box>

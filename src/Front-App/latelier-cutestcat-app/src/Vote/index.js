@@ -5,10 +5,12 @@ import CatCard from "../Components/CatCard";
 import useCutestCatApi from "../hooks/useCutestCatApi";
 import "../style.css";
 import TextButtonApp from "../Components/TextButtonApp";
+import { useSearchParams } from "react-router-dom";
 
 function Vote() {
-  const [catCode, setCatCode] = useState("");
-  const [inputValue, setInputvalue] = useState("");
+  const [searchParams] = useSearchParams();
+  const [catCode, setCatCode] = useState(searchParams.get("code"));
+  const [inputValue, setInputvalue] = useState(searchParams.get("code"));
   const [voteEmail, setVoteEmail] = useState("");
   const { getCat, voteCat } = useCutestCatApi();
 
