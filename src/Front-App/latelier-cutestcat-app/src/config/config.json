@@ -1,0 +1,8 @@
+{
+    "development": {
+      "cutestCatApiUrl": "http://localhost:5141/api"
+    },
+    "production": {
+      "cutestCatApiUrl": "https://lateliercutestcatapiapi20240409201205.azurewebsites.net/api"
+    }
+  }
