@@ -1,7 +1,5 @@
 import axios from "axios";
 
-const URL = "http://localhost:5141/api/";
-
 /**
  * The LAtelier.CutestCatApi Provider
  * @returns {httpClient}
@@ -9,8 +7,8 @@ const URL = "http://localhost:5141/api/";
  */
 export default function useCutestCatApi() {
   const cutestCatApi = axios.create({
-    //baseURL: `${config.get("bookingApiUrl")}/api`,
-    baseURL: URL,
+    baseURL:
+      "https://lateliercutestcatapiapi20240409201205.azurewebsites.net/api/",
   });
 
   return {
