@@ -2,7 +2,7 @@ import React from "react";
 import { useQuery } from "react-query";
 import { isEmpty } from "ramda";
 import useCutestCatApi from "../hooks/useCutestCatApi";
-import "./style.css";
+import "../style.css";
 import CatCard from "../Components/CatCard";
 
 function Home() {
@@ -23,7 +23,7 @@ function Home() {
   };
 
   return (
-    <div className={"homeBox"}>
+    <div className={"pageBlock"}>
       <div className="catBoxs">{cutestCatDisplay()}</div>
     </div>
   );
