@@ -44,7 +44,7 @@ namespace LAtelier.CutestCatApi.Api.Controllers.Cat
         [Produces(MediaTypeNames.Application.Json)]
         public IActionResult GetCatByCode(string code)
         {
-            if (string.IsNullOrWhiteSpace(code) || code.Length <= 2)
+            if (string.IsNullOrWhiteSpace(code) || code.Length < 2)
                 return BadRequest("Bad code provided");
 
             var result = _catsManagerService.GetCatBycode(code);
