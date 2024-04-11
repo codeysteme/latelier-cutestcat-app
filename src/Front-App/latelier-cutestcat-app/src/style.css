@@ -1,0 +1,55 @@
+body {
+  padding: O;
+  margin: 0;
+}
+
+.pageBlock {
+  width: 1200px;
+  padding: 0;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.catBoxs{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.catBoxVote {
+  flex-direction: column;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.catBox{
+  margin: 10px;
+  display: block!important;
+}
+
+#searchBlock {
+  width: 350px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.headerNav {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerNav a {
+  text-align: center;
+  width: 100px;
+  background-color: #fff;
+  text-decoration: none;
+  color: #000;
+}
+
+.cardLink {
+  text-decoration: none;
+}
